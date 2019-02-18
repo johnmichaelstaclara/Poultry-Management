@@ -1,0 +1,148 @@
+.avatar2 {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	top: 1px;
+	left: calc(5% - 30px);
+}
+
+.avatar3 {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: calc(5% - 30px);
+
+
+}
+
+.avatar1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 20%;
+	position: auto;
+
+}
+
+body {
+	font-size: 100%;
+    background-image: url(.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: left;	
+}
+header{
+     padding: 10px ;
+     background:#5F9EA0;
+	 width: 100%;
+}
+.h1{
+  color: white;
+  font-family:Clarendon Blk BT;
+  }
+header, .h1{
+	color:white;
+}
+form, .label{
+	color:white;
+}
+
+form, .content {
+	width: 60%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label{
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+
+.input-group input{
+	height: 30px;
+	width: 100%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+}
+
+.btn{
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border: 10px solid;
+	border-radius: 15px;
+	
+}
+
+.error {
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: left;
+}
+.success{
+	color:#3c763d;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+}
+footer{
+     padding: 10px ;
+     background:#5F9EA0;
+	 width: 100%;
+}
+footer, .p{
+    color:white;
+    font-size:15;
+}
+p{
+	color:white;
+}
+form, {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #0000;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+	background: rgba(0, 0, 0, 0.5);
+	
+}
+.container {
+	width: 20%;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #B0C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+	background: rgba(0, 0, 0, 0.5);
+
+}
+table, .th {
+	color: white;
+}
+
+.tile-copyright {
+    flex: 1 2 300px;
+    max-width: 100%;
+    font-size: 12px;
+}
