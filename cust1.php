@@ -1,4 +1,4 @@
-<?php include('process2.php');?>
+<?php include('process4.php');?>
 
 <!DOCTYPE html>
 <html>
@@ -37,7 +37,7 @@
 
 <div id="main">
 			
-	<?php require_once 'process2.php';?>
+	<?php require_once 'process4.php';?>
 	
 	<?php
 	
@@ -62,7 +62,7 @@
 			$userid=$row['id'];
 
 		}
-		$result = $mysqli->query("SELECT * FROM items where userid='$userid'") or die($mysqli->error);
+		$result = $mysqli->query("SELECT * FROM cust where userid='$userid'") or die($mysqli->error);
 		//pre_r($result);
 		
 		?>
@@ -73,13 +73,11 @@
 				<thead>
 					<center><p><h1 style="color: white;">Contact List</h1></p></center>
 					<tr>
-						<th>Item_ID</th>
-						<th>Description</th>
-						<th>Unit</th>
-						<th>Quality</th>
-						<th>Price</th>
-						
-						
+						<th>Last Name</th>
+						<th>First Name</th>
+						<th>Middle Name</th>
+						<th>Contact No.</th>
+						<th>Addres</th>
 						<th colspan="2">Action</th>
 					</tr>
 				</thead>
@@ -88,17 +86,15 @@
 					while($row=$result->fetch_assoc()):?>
 					
 						<tr>
-							<td><?php echo $row['id']?></td>
-							<td><?php echo $row['description']?></td>
-							<td><?php echo $row['unit']?></td>
-							<td><?php echo $row['quality']?></td>
-							<td><?php echo $row['price']?></td>
-							
-							
+							<td><?php echo $row['last_name']?></td>
+							<td><?php echo $row['first_name']?></td>
+							<td><?php echo $row['middle_name']?></td>
+							<td><?php echo $row['contact_no']?></td>
+							<td><?php echo $row['address']?></td>
 							<td>
-								<a href="item2.php?edit=<?php echo $row['id'];?>"
+								<a href="cust2.php?edit=<?php echo $row['id'];?>"
 									class="btn">Edit</a>
-								<a href="process2.php?delete=<?php echo $row['id'];?>"
+								<a href="process4.php?delete=<?php echo $row['id'];?>"
 									class="btn btn-danger">Delete</a>
 									
 							</td>
@@ -115,7 +111,7 @@
 	
 	?>
 
-	<a href="item2.php"class="btn">Add Contact</a>
+	<a href="cust2.php"class="btn">Add Contact</a>
 	<a href="index.php"class="btn">Back</a>
 	
 </div>
@@ -125,4 +121,4 @@
     </footer>
 
 </body>
-</html> 
+</html>
