@@ -3,7 +3,11 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Feb 27, 2019 at 08:38 PM
+=======
+-- Generation Time: Feb 20, 2019 at 09:01 PM
+>>>>>>> 54b6e31ecfc08e456d844fb9336a15ac40e603db
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -136,6 +140,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 (7, 'jm', 'das', 'c20ad4d76fe97759aa27a0c99bff6710');
 
+<<<<<<< HEAD
 -- --------------------------------------------------------
 
 --
@@ -150,6 +155,8 @@ CREATE TABLE `vac` (
   `amount` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+=======
+>>>>>>> 54b6e31ecfc08e456d844fb9336a15ac40e603db
 --
 -- Indexes for dumped tables
 --
@@ -236,11 +243,14 @@ ALTER TABLE `sale`
 --
 ALTER TABLE `users`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+<<<<<<< HEAD
 --
 -- AUTO_INCREMENT for table `vac`
 --
 ALTER TABLE `vac`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+=======
+>>>>>>> 54b6e31ecfc08e456d844fb9336a15ac40e603db
 --
 -- Constraints for dumped tables
 --
