@@ -1,4 +1,4 @@
-<?php include('process2.php');?>
+<?php include('process5.php');?>
 
 <!DOCTYPE html>
 <html>
@@ -37,7 +37,7 @@
 
 <div id="main">
 			
-	<?php require_once 'process2.php';?>
+	<?php require_once 'process4.php';?>
 	
 	<?php
 	
@@ -62,7 +62,7 @@
 			$userid=$row['id'];
 
 		}
-		$result = $mysqli->query("SELECT * FROM items where userid='$userid'") or die($mysqli->error);
+		$result = $mysqli->query("SELECT * FROM cust where userid='$userid'") or die($mysqli->error);
 		//pre_r($result);
 		
 		?>
@@ -73,13 +73,10 @@
 				<thead>
 					<center><p><h1 style="color: white;">Contact List</h1></p></center>
 					<tr>
-						<th>Item_ID</th>
-						<th>Description</th>
-						<th>Unit</th>
-						<th>Quality</th>
-						<th>Price</th>
-						
-						
+						<th>Types of Vacination</th>
+						<th>Timestamp</th>
+						<th>Amount</th>
+					
 						<th colspan="2">Action</th>
 					</tr>
 				</thead>
@@ -89,16 +86,13 @@
 					
 						<tr>
 							<td><?php echo $row['id']?></td>
-							<td><?php echo $row['description']?></td>
-							<td><?php echo $row['unit']?></td>
-							<td><?php echo $row['quality']?></td>
-							<td><?php echo $row['price']?></td>
-							
-							
+							<td><?php echo $row['types_vac']?></td>
+							<td><?php echo $row['timestamp']?></td>
+							<td><?php echo $row['amount']?></td>
 							<td>
-								<a href="item2.php?edit=<?php echo $row['id'];?>"
+								<a href="med2.php?edit=<?php echo $row['id'];?>"
 									class="btn">Edit</a>
-								<a href="process2.php?delete=<?php echo $row['id'];?>"
+								<a href="process5.php?delete=<?php echo $row['id'];?>"
 									class="btn btn-danger">Delete</a>
 									
 							</td>
@@ -115,7 +109,7 @@
 	
 	?>
 
-	<a href="item2.php"class="btn">Add Contact</a>
+	<a href="cust2.php"class="btn">Add Contact</a>
 	<a href="index.php"class="btn">Back</a>
 	
 </div>
@@ -125,4 +119,4 @@
     </footer>
 
 </body>
-</html> 
+</html>

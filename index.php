@@ -52,9 +52,9 @@
 		<a href="home.php" class="btn">Home</a>
 		<a href="add.php" class="btn">Flock Mangement</a>
 		<a href="sale1.php" class="btn">Sales</a>
-		<a href="add.php" class="btn">Item</a>
-		<a href="add.php" class="btn">Feeds</a>
-		<a href="add.php" class="btn">Customer</a>
+		<a href="item1.php" class="btn">Item</a>
+		<a href="feed1.php" class="btn">Feeds</a>
+		<a href="cust1.php" class="btn">Customer</a>
 		<a href="add.php" class="btn">Medication</a>
         </div>
 
