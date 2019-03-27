@@ -11,7 +11,7 @@
 <body>
 
   <header class="main">
-  	<center><h1>&copy;Poultry Management</h1></center>
+  	<center><h1>&copy;POULTRY MANAGEMENT</h1></center>
     <div class="row">
    <img src="lol.png" class="avatar2">	
 	</nav>

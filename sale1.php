@@ -11,9 +11,8 @@
 
       <header class="main">
     <div class="row">
-    <h1 class="col-sm-4">&copy;POONBOOK</h1>
-   
-     <nav class="col-sm-8 text-right"> 	 
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
+        <nav class="col-sm-8 text-right"> 	 
          
 	     <?php if (isset($_SESSION['success'])): ?>
 		      
@@ -24,12 +23,14 @@
 		      <p><a href="index.php?logout='1'" style="color:white;">Logout</a></p>
 		 <?php endif ?> 
 		 <a href="home.php" class="btn">Home</a>
-		 <a href="add.php" class="btn">Flock Mangement</a>
-		 <a href="add.php" class="btn">Sales</a>
-		<a href="add.php" class="btn">Item</a>
-		<a href="add.php" class="btn">Feeds</a>
-		<a href="add.php" class="btn">Customer</a>
-		<a href="add.php" class="btn">Medication</a>
+		<a href="add.php" class="btn">Flock Mangement</a>
+		<a href="sale1.php" class="btn">Sales</a>
+		<a href="item1.php" class="btn">Item</a>
+		<a href="feed1.php" class="btn">Feeds</a>
+		<a href="cust1.php" class="btn">Customer</a>
+		<a href="med1.php" class="btn">Medication</a>
+		<a href="order1.php" class="btn">Order</a>
+		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>
 		 </header><br><br>
@@ -71,10 +72,13 @@
 			<table class="table">
 			
 				<thead>
-					<center><p><h1 style="color: white;">Contact List</h1></p></center>
+					<center><p><h1 style="color: white;">Sales List</h1></p></center>
 					<tr>
+						<th>Sales_ID</th>
 						<th>Timestamp</th>
 						<th>Cust_ID</th>
+						<th>Eggs_ID</th>
+						<th>Flocks_ID</th>
 						
 						<th colspan="2">Action</th>
 					</tr>
@@ -84,8 +88,11 @@
 					while($row=$result->fetch_assoc()):?>
 					
 						<tr>
-							<td><?php echo $row['timestamp']?></td>
+							<td><?php echo $row['id']?></td>
+							<td><?php echo $row['date']?></td>
 							<td><?php echo $row['cust_id']?></td>
+							<td><?php echo $row['eggs_id']?></td>
+							<td><?php echo $row['flocks_id']?></td>
 							
 							<td>
 								<a href="sale2.php?edit=<?php echo $row['id'];?>"
@@ -107,14 +114,17 @@
 	
 	?>
 
-	<a href="sale2.php"class="btn">Add Contact</a>
+	<a href="sale2.php"class="btn">Add</a>
 	<a href="index.php"class="btn">Back</a>
 	
 </div>
 <br><br>
-<footer class="main">
+ <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
+   <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
+   P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
     </footer>
+
 
 </body>
 </html> 

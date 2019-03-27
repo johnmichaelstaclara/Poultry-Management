@@ -58,7 +58,7 @@
 		array_push($errors, "Password is required");
 	}
 	
-	if (count($errors) == 0){
+	if (count($errors) == 1){
 		$password = md5($password);
 		$query = " SELECT * FROM user WHERE username='$username' AND password='$password'";
 		$result = mysqli_query($db, $query);

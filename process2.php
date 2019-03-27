@@ -8,7 +8,8 @@ $mysqli = new mysqli('localhost','root','','registration') or die(mysqli_error($
 
 $id='';
 $update = false;
-$description ="";
+$flocks_id ="";
+$eggs_id ="";
 $unit="";
 $quality ="";
 $price="";
@@ -17,7 +18,8 @@ $price="";
 
 
 if(isset($_POST['save'])){
-	$description = $_POST['description'];
+	$flocks_id = $_POST['flocks_id'];
+	$eggs_id = $_POST['eggs_id'];
 	$unit = $_POST['unit'];
 	$quality = $_POST['quality'];
 	$price = $_POST['price'];
@@ -30,7 +32,11 @@ if(isset($_POST['save'])){
 
 	}
 
+<<<<<<< HEAD
 	$mysqli->query("INSERT INTO items (userid,description,unit,quality,price) VALUES ('$userid','$description','$unit','$quality','$price')") or
+=======
+	$mysqli->query("INSERT INTO items (userid,flocks_id,eggs_id,unit,quality,price) VALUES ('$userid','$flocks_id','$eggs_id','$unit','$quality','$price')") or
+>>>>>>> New files
 			die($mysqli->error);
 	$_SESSION['message'] = "Record has been saved!";
 	$_SESSION['msg_type'] = "success";
@@ -55,7 +61,8 @@ if(isset($_GET['edit'])){
 	$result = $mysqli->query("SELECT * FROM items WHERE id=$id") or die($mysqli->error);
 	if(@count($result)==1){
 		$row=$result->fetch_array();
-		$description = $row['description'];
+		$flocks_id = $row['flocks_id'];
+		$eggs_id = $row['eggs_id'];
 		$unit = $row['unit'];
 		$quality = $row['quality'];
 		$price = $row['price'];
@@ -66,14 +73,19 @@ if(isset($_GET['edit'])){
 }
 if(isset($_POST['update'])){
 	$id = $_POST['id'];
-	$description = $_POST['description'];
+	$flocks_id = $_POST['flocks_id'];
+	$eggs_id = $_POST['eggs_id'];
 	$unit = $_POST['unit'];
 	$quality = $_POST['quality'];
 	$price = $_POST['price'];
 	
 	
 	
+<<<<<<< HEAD
 	$mysqli->query("UPDATE items SET description='$description',unit='$unit',quality='$quality',price='$price' WHERE id=$id") or die($mysqli->error);
+=======
+	$mysqli->query("UPDATE items SET flocks_id='$flocks_id',eggs_id='$eggs_id',unit='$unit',quality='$quality',price='$price' WHERE id=$id") or die($mysqli->error);
+>>>>>>> New files
 	$_SESSION['message'] = "Record has been updated!";
 	$_SESSION['msg_type'] = "warning";
 	

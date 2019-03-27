@@ -13,12 +13,13 @@
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
  <header class="main">
-  	<center><h1>&copy;Poultry Management</h1></center>
+  	<center><h1>&copy;POULTRY MANAGEMENT</h1></center>
   	 <img src="lol.png" class="avatar3">
      <nav class="col-sm-12 text-right"> 
 <a href="home.php" style="color:white;">Home</a>
@@ -34,7 +35,7 @@
 	  <form>
         
        
-		<h1>Welcome to Poonbook</h1>
+		<h3>Welcome to <br>your poultry management</h3>
 
              <nav class="col-sm-8 text-left"> 	 
          
@@ -55,7 +56,15 @@
 		<a href="item1.php" class="btn">Item</a>
 		<a href="feed1.php" class="btn">Feeds</a>
 		<a href="cust1.php" class="btn">Customer</a>
+<<<<<<< HEAD
 		<a href="add.php" class="btn">Medication</a>
+=======
+		<a href="med1.php" class="btn">Medication</a>
+		<a href="order1.php" class="btn">Order</a>
+		<a href="egg1.php" class="btn">Eggs</a>
+		<a href="report.php" class="btn">Reports</a>
+
+>>>>>>> New files
         </div>
 
        
@@ -69,21 +78,14 @@
     <form>
 
 		<p>
-		<h1>Welcome to my Poonbook</h1>
-		This poonbook also known as a telephone book, telephone address book phonebook is a listing of <br>
-		phonebook subscribers in a geographical area or subscribers to services provided by the oraganization<br> 
-		that publishes the directory. its purpose is to allow the phonebook email of a subscriber identifiesd by<br>
-		name and address to be found.<br>
-		<br>
-		The advent of the internet and smartphones in the 21st century greatly reduced the need of a paper<br>
-	    poonbook. Some communities, such as Seattle and San Francisco, sought to ban their unsolicited<br>
-		distribution as wasted unwanted and harmful to the environment.<br><br>
 		
-		Subscriber names are generally listed in alphabetical order. together with their email. in principle<br>
-		every subscriber in the geographical coverage area is listed, but subscribers may request the exclusion<br>
-		of their number from the directory, often for a fee: thier email is then said to be unlisted, ex directory<br>
-		private or private email, or non published.
-		
+           <h1>POULTRY MANAGEMENT</h1>
+
+      Poultry management usually refers to the husbandry practices or production techniques that help to maximize the efficiency of production. Sound management practices are very essential to optimize production. Scientific poultry management aims at maximizing returns with minimum investment.<br><br>
+
+           <h1>Brooder Management</h1>
+      Brooder house: Brooder house should be draft-free, rain-proof and protected against predators. Brooding pens should have windows with wire mesh for adequate ventilation. Too dusty environment irritates the respiratory tract of the chicks. Besides dust is one of the vehicles of transmission of diseases. Too much moisture causes ammonia fumes which irritate the respiratory tract and eyes. Good ventilation provides a comfortable environment without draft.<br><br><br>
+		<a class="nav-link fa fa-google" href="http://agritech.tnau.ac.in/animal_husbandry/ani_chik_poultry%20mgt.html" style="color: white; "> Google</a>
 		</p>
 
 
@@ -95,6 +97,7 @@
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
    P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
+   <p align="right"><a class="nav-link fa fa-google" href="http://agritech.tnau.ac.in/animal_husbandry/ani_chik_poultry%20mgt.html" style="color: white; "> Google</a></p>
     </footer>
 	
 

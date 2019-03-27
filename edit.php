@@ -12,7 +12,7 @@
 
   <header class="main">
     <div class="row">
-    <h1 class="col-sm-4">&copy;POONBOOK</h1>
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
      <nav class="col-sm-8 text-right"> 	 
          
 	     <?php if (isset($_SESSION['success'])): ?>
@@ -33,6 +33,7 @@
 	<div class="row justify-content-center">
 	<form action="process.php" method="POST">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
+
 	<p>Please pill up properly</p>
 		<div class="form-group">
 			<label>Breed</label>
@@ -62,8 +63,10 @@
 	</div>
 
 <br>
-<footer class="main">
+ <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
+   <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
+   P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
     </footer>
 
 </body>

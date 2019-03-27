@@ -11,7 +11,7 @@
 
       <header class="main">
     <div class="row">
-    <h1 class="col-sm-4">&copy;POONBOOK</h1>
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
    
      <nav class="col-sm-8 text-right"> 	 
          
@@ -23,13 +23,15 @@
 		     <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
 		      <p><a href="index.php?logout='1'" style="color:white;">Logout</a></p>
 		 <?php endif ?> 
-		 <a href="home.php" class="btn">Home</a>
-		 <a href="add.php" class="btn">Flock Mangement</a>
-		 <a href="add.php" class="btn">Sales</a>
-		<a href="add.php" class="btn">Item</a>
-		<a href="add.php" class="btn">Feeds</a>
-		<a href="add.php" class="btn">Customer</a>
-		<a href="add.php" class="btn">Medication</a>
+		<a href="home.php" class="btn">Home</a>
+		<a href="add.php" class="btn">Flock Mangement</a>
+		<a href="sale1.php" class="btn">Sales</a>
+		<a href="item1.php" class="btn">Item</a>
+		<a href="feed1.php" class="btn">Feeds</a>
+		<a href="cust1.php" class="btn">Customer</a>
+		<a href="med1.php" class="btn">Medication</a>
+		<a href="order1.php" class="btn">Order</a>
+		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>
 		 </header><br><br>
@@ -71,8 +73,9 @@
 			<table class="table">
 			
 				<thead>
-					<center><p><h1 style="color: white;">Contact List</h1></p></center>
+					<center><p><h1 style="color: white;">Flocks Management List</h1></p></center>
 					<tr>
+						<th>Flocks_ID</th>
 						<th>Breed</th>
 						<th>Rooster</th>
 						<th>Hen</th>
@@ -84,6 +87,7 @@
 					while($row=$result->fetch_assoc()):?>
 					
 						<tr>
+							<td><?php echo $row['id']?></td>
 							<td><?php echo $row['breed']?></td>
 							<td><?php echo $row['rooster']?></td>
 							<td><?php echo $row['hen']?></td>
@@ -107,13 +111,15 @@
 	
 	?>
 
-	<a href="edit.php"class="btn">Add Contact</a>
+	<a href="edit.php"class="btn">Add</a>
 	<a href="index.php"class="btn">Back</a>
 	
 </div>
 <br><br>
-<footer class="main">
+ <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
+   <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
+   P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
     </footer>
 
 </body>

@@ -8,15 +8,18 @@ $mysqli = new mysqli('localhost','root','','registration') or die(mysqli_error($
 
 $id='';
 $update = false;
-$timestamp ="";
+$date ="";
 $cust_id="";
+$eggs_id="";
+$flocks_id="";
 
 
 
 
 if(isset($_POST['save'])){
-	$timestamp = $_POST['timestamp'];
 	$cust_id = $_POST['cust_id'];
+	$eggs_id = $_POST['eggs_id'];
+	$flocks_id = $_POST['flocks_id'];
 	$username= $_SESSION["username"];
 	$result=$mysqli->query("select id from users where username='$username'") or die($mysqli->error);
 	if(@count($result)==1)
@@ -26,7 +29,7 @@ if(isset($_POST['save'])){
 
 	}
 
-	$mysqli->query("INSERT INTO sale (userid,timestamp,cust_id) VALUES ('$userid','$timestamp','$cust_id')") or
+	$mysqli->query("INSERT INTO sale (userid,cust_id,eggs_id,flocks_id) VALUES ('$userid','$cust_id','$eggs_id','$flocks_id')") or
 			die($mysqli->error);
 	$_SESSION['message'] = "Record has been saved!";
 	$_SESSION['msg_type'] = "success";
@@ -51,8 +54,9 @@ if(isset($_GET['edit'])){
 	$result = $mysqli->query("SELECT * FROM sale WHERE id=$id") or die($mysqli->error);
 	if(@count($result)==1){
 		$row=$result->fetch_array();
-		$timestamp = $row['timestamp'];
 		$cust_id = $row['cust_id'];
+		$eggs_id = $row['eggs_id'];
+		$flocks_id = $row['flocks_id'];
 		
 		
 		
@@ -60,12 +64,14 @@ if(isset($_GET['edit'])){
 }
 if(isset($_POST['update'])){
 	$id = $_POST['id'];
-	$timestamp = $_POST['timestamp'];
+
 	$cust_id = $_POST['cust_id'];
+	$eggs_id = $_POST['eggs_id'];
+	$flocks_id = $_POST['flocks_id'];
 	
 	
 	
-	$mysqli->query("UPDATE sale SET timestamp='$timestamp',cust_id='$cust_id' WHERE id=$id") or die($mysqli->error);
+	$mysqli->query("UPDATE sale SET cust_id='$cust_id',eggs_id='$eggs_id',flocks_id='$flocks_id' WHERE id=$id") or die($mysqli->error);
 	$_SESSION['message'] = "Record has been updated!";
 	$_SESSION['msg_type'] = "warning";
 	

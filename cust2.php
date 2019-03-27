@@ -12,7 +12,11 @@
 
   <header class="main">
     <div class="row">
+<<<<<<< HEAD
     <h1 class="col-sm-4">&copy;POONBOOK</h1>
+=======
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
+>>>>>>> New files
      <nav class="col-sm-8 text-right"> 	 
          
 	     <?php if (isset($_SESSION['success'])): ?>
@@ -70,8 +74,15 @@
 	</div>
 
 <br>
+<<<<<<< HEAD
 <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
+=======
+ <footer class="main">
+   <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
+   <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
+   P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
+>>>>>>> New files
     </footer>
 
 </body>

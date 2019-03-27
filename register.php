@@ -9,7 +9,7 @@
 </head>
 <body>
  <header class="main">
-  	<center><h1>&copy;Poultry Management</h1></center>
+  	<center><h1>&copy;POULTRY MANAGEMENT</h1></center>
   	 <img src="lol.png" class="avatar3">
      <nav class="col-sm-12 text-right"> 
 <a href="home.php" style="color:white;">Home</a>
