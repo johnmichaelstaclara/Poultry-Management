@@ -1,6 +1,4 @@
-<h1><b> Poultry-Management</b></h1>
-
- <h1>POULTRY MANAGEMENT</h1>
+<h1>POULTRY MANAGEMENT</h1>
 
       Poultry management usually refers to the husbandry practices or production techniques that help to maximize the efficiency of production. Sound management practices are very essential to optimize production. Scientific poultry management aims at maximizing returns with minimum investment.<br><br>
 
