@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>poonbook</title>
+	<title>Poultry Management</title>
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -34,6 +34,7 @@
 	<form action="process2.php" method="POST">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
 	<p>Please pill up properly</p>
+<<<<<<< HEAD
 	 <label>Breed</label>
 				<?php
 						$sql = "SELECT * FROM `data`";
@@ -73,6 +74,12 @@
                           }
                           ?>
             </select>
+=======
+	 <div class="form-group">
+			<label>Item Name</label>
+			<input type="text" name="item_name" class="form-control" value="<?php echo $item_name;?>"placeholder="Enter the item" required>
+		</div>
+>>>>>>> adding new files
 		
 		
 		<div class="form-group">

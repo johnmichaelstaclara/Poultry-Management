@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>poonbook</title>
+=======
+	<title>Poultry Management</title>
+>>>>>>> adding new files
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -31,6 +35,10 @@
 		<a href="cust1.php" class="btn">Customer</a>
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
+<<<<<<< HEAD
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+>>>>>>> adding new files
 		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>

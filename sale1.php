@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>poonbook</title>
+	<title>Poultry Management</title>
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -30,7 +30,13 @@
 		<a href="cust1.php" class="btn">Customer</a>
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
+<<<<<<< HEAD
 		<a href="report.php"class="btn">Reports</a>
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+		<a href="report.php"class="btn">Reports</a>
+	
+>>>>>>> adding new files
 		</nav>
 		</div>
 		 </header><br><br>
@@ -67,6 +73,9 @@
 		//pre_r($result);
 		
 		?>
+		
+		
+		
 		<div class="row justify-content-center">
 		<br><br><br>
 			<table class="table">
@@ -80,6 +89,7 @@
 						<th>Eggs_ID</th>
 						<th>Flocks_ID</th>
 						
+						
 						<th colspan="2">Action</th>
 					</tr>
 				</thead>
@@ -91,9 +101,13 @@
 							<td><?php echo $row['id']?></td>
 							<td><?php echo $row['date']?></td>
 							<td><?php echo $row['cust_id']?></td>
+<<<<<<< HEAD
 							<td><?php echo $row['eggs_id']?></td>
 							<td><?php echo $row['flocks_id']?></td>
 							
+=======
+														
+>>>>>>> adding new files
 							<td>
 								<a href="sale2.php?edit=<?php echo $row['id'];?>"
 									class="btn">Edit</a>

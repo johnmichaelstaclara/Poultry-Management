@@ -4,7 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>poonbook</title>
+=======
+	<title>Poultry Management</title>
+>>>>>>> adding new files
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>

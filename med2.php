@@ -4,7 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>poonbook</title>
+=======
+	<title>Poultry Management</title>
+>>>>>>> adding new files
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -13,10 +17,14 @@
   <header class="main">
     <div class="row">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h1 class="col-sm-4">&copy;POONBOOK</h1>
 =======
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
 >>>>>>> New files
+=======
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
+>>>>>>> adding new files
      <nav class="col-sm-8 text-right"> 	 
          
 	     <?php if (isset($_SESSION['success'])): ?>
@@ -39,6 +47,7 @@
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
 	<p>Please pill up properly</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<div class="form-group">
 			<label>Types of Vacination</label>
 			<input type="text" name="types_vac" class="form-control" value="<?php echo $types_vac;?>"placeholder="Enter the types of Vacination" required>
@@ -48,6 +57,8 @@
 			<input type="text" name="timestamp" class="form-control" value="<?php echo $timestamp;?>"placeholder="Enter the Timestamp" required>
 		</div>
 =======
+=======
+>>>>>>> adding new files
 	 <label>Breed</label>
 				<?php
 						$sql = "SELECT * FROM `data`";
@@ -89,7 +100,10 @@
             </select>
 		</div>
 		
+<<<<<<< HEAD
 >>>>>>> New files
+=======
+>>>>>>> adding new files
 		<div class="form-group">
 			<label>Amount</label>
 			<input type="text" name="amount" class="form-control" value="<?php echo $amount;?>"placeholder="Enter the amount" required>
@@ -112,14 +126,20 @@
 
 <br>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
 =======
+=======
+>>>>>>> adding new files
  <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
    P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
+<<<<<<< HEAD
 >>>>>>> New files
+=======
+>>>>>>> adding new files
     </footer>
 
 </body>

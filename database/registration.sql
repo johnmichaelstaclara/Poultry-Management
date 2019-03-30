@@ -5,6 +5,7 @@
 -- Host: 127.0.0.1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Generation Time: Feb 27, 2019 at 08:38 PM
 =======
 -- Generation Time: Feb 20, 2019 at 09:01 PM
@@ -12,6 +13,9 @@
 =======
 -- Generation Time: Mar 27, 2019 at 03:19 AM
 >>>>>>> New files
+=======
+-- Generation Time: Mar 29, 2019 at 11:14 PM
+>>>>>>> adding new files
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -44,6 +48,7 @@ CREATE TABLE `cust` (
   `address` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+<<<<<<< HEAD
 --
 -- Dumping data for table `cust`
 --
@@ -56,6 +61,8 @@ INSERT INTO `cust` (`id`, `userid`, `last_name`, `first_name`, `middle_name`, `c
 (7, 14, 'abante', 'cassy', 'mauren', '21312', 'casdfasf');
 >>>>>>> New files
 
+=======
+>>>>>>> adding new files
 -- --------------------------------------------------------
 
 --
@@ -75,8 +82,12 @@ CREATE TABLE `data` (
 --
 
 INSERT INTO `data` (`id`, `userid`, `breed`, `rooster`, `hen`) VALUES
+<<<<<<< HEAD
 (16, 14, 'brioler', 1234, 1232),
 (17, 14, 'texas', 12, 12213);
+=======
+(19, 17, '2', 4, 2);
+>>>>>>> adding new files
 
 -- --------------------------------------------------------
 
@@ -90,6 +101,7 @@ CREATE TABLE `data1` (
   `sales_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+<<<<<<< HEAD
   `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -100,6 +112,11 @@ CREATE TABLE `data1` (
 INSERT INTO `data1` (`id`, `userid`, `sales_id`, `item_id`, `date`, `price`) VALUES
 (8, 14, 9, 6, '2019-03-27 02:06:36', 13);
 
+=======
+  `price` decimal(7,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+>>>>>>> adding new files
 -- --------------------------------------------------------
 
 --
@@ -118,6 +135,7 @@ CREATE TABLE `egg` (
   `broken_egg` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+<<<<<<< HEAD
 --
 -- Dumping data for table `egg`
 --
@@ -125,6 +143,8 @@ CREATE TABLE `egg` (
 INSERT INTO `egg` (`id`, `userid`, `flocks_id`, `date`, `small_egg`, `medium_egg`, `large_egg`, `spoiled_egg`, `broken_egg`) VALUES
 (3, 14, 17, '2019-03-27 01:10:47', 12312, 123, 123, 6, 123);
 
+=======
+>>>>>>> adding new files
 -- --------------------------------------------------------
 
 --
@@ -139,7 +159,11 @@ CREATE TABLE `feeds` (
   `quality` int(20) NOT NULL,
   `unit` int(20) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+<<<<<<< HEAD
   `amount` decimal(10,0) NOT NULL
+=======
+  `amount` decimal(7,2) NOT NULL
+>>>>>>> adding new files
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -151,6 +175,7 @@ CREATE TABLE `feeds` (
 CREATE TABLE `items` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
+<<<<<<< HEAD
   `flocks_id` int(11) NOT NULL,
   `eggs_id` int(11) NOT NULL,
   `unit` int(20) NOT NULL,
@@ -201,15 +226,26 @@ CREATE TABLE `items` (
   `unit` int(20) NOT NULL,
   `quality` int(20) NOT NULL,
   `price` int(250) NOT NULL
+=======
+  `item_name` varchar(250) NOT NULL,
+  `unit` int(20) NOT NULL,
+  `quality` int(20) NOT NULL,
+  `price` decimal(7,0) NOT NULL
+>>>>>>> adding new files
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `items`
 --
 
+<<<<<<< HEAD
 INSERT INTO `items` (`id`, `userid`, `description`, `unit`, `quality`, `price`) VALUES
 (1, 7, 'adfadf', 786676, 32, 6546),
 (2, 7, 'asadfsd', 12, 1342, 23452);
+=======
+INSERT INTO `items` (`id`, `userid`, `item_name`, `unit`, `quality`, `price`) VALUES
+(8, 17, 'pader', 12, 21, '12');
+>>>>>>> adding new files
 
 -- --------------------------------------------------------
 
@@ -221,9 +257,13 @@ CREATE TABLE `sale` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+<<<<<<< HEAD
   `cust_id` int(11) NOT NULL,
   `eggs_id` int(11) NOT NULL,
   `flocks_id` int(11) NOT NULL
+=======
+  `cust_id` int(11) NOT NULL
+>>>>>>> adding new files
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -252,6 +292,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (7, 'jm', 'das', 'c20ad4d76fe97759aa27a0c99bff6710');
 
 <<<<<<< HEAD
@@ -259,6 +300,11 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 (14, 'cassy', 'asdas', '202cb962ac59075b964b07152d234b70');
 
 >>>>>>> New files
+=======
+(16, 'admin', 'sssa', '21232f297a57a5a743894a0e4a801fc3'),
+(17, 'juliejane', 'juliejanedumz@gmail.com', '7d18d4c9ddb6790d732f70211345d1b5');
+
+>>>>>>> adding new files
 -- --------------------------------------------------------
 
 --
@@ -268,6 +314,7 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 CREATE TABLE `vac` (
   `id` int(11) NOT NULL,
   `userid` int(11) NOT NULL,
+<<<<<<< HEAD
 <<<<<<< HEAD
   `types_vac` varchar(250) NOT NULL,
   `timestamp` varchar(250) NOT NULL,
@@ -293,6 +340,15 @@ INSERT INTO `vac` (`id`, `userid`, `flocks_id`, `types_vac`, `date`, `amount`, `
 
 >>>>>>> New files
 --
+=======
+  `flocks_id` int(11) NOT NULL,
+  `types_vac` varchar(250) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `amount` decimal(7,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+>>>>>>> adding new files
 -- Indexes for dumped tables
 --
 
@@ -312,7 +368,10 @@ ALTER TABLE `data`
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> adding new files
 -- Indexes for table `data1`
 --
 ALTER TABLE `data1`
@@ -330,15 +389,22 @@ ALTER TABLE `egg`
   ADD KEY `userid` (`userid`);
 
 --
+<<<<<<< HEAD
 >>>>>>> New files
+=======
+>>>>>>> adding new files
 -- Indexes for table `feeds`
 --
 ALTER TABLE `feeds`
   ADD PRIMARY KEY (`id`),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   ADD UNIQUE KEY `flocks_id` (`flocks_id`),
 >>>>>>> New files
+=======
+  ADD UNIQUE KEY `flocks_id` (`flocks_id`),
+>>>>>>> adding new files
   ADD KEY `userid` (`userid`);
 
 --
@@ -347,10 +413,13 @@ ALTER TABLE `feeds`
 ALTER TABLE `items`
   ADD PRIMARY KEY (`id`),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   ADD UNIQUE KEY `flocks_id` (`flocks_id`),
   ADD UNIQUE KEY `eggs_id` (`eggs_id`),
 >>>>>>> New files
+=======
+>>>>>>> adding new files
   ADD KEY `userid` (`userid`);
 
 --
@@ -359,8 +428,11 @@ ALTER TABLE `items`
 ALTER TABLE `sale`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `cust_id` (`cust_id`),
+<<<<<<< HEAD
   ADD UNIQUE KEY `eggs_id` (`eggs_id`),
   ADD UNIQUE KEY `flocks_id` (`flocks_id`),
+=======
+>>>>>>> adding new files
   ADD KEY `userid` (`userid`);
 
 --
@@ -375,9 +447,13 @@ ALTER TABLE `users`
 ALTER TABLE `vac`
   ADD PRIMARY KEY (`id`),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   ADD UNIQUE KEY `flocks_id` (`flocks_id`),
 >>>>>>> New files
+=======
+  ADD UNIQUE KEY `flocks_id` (`flocks_id`),
+>>>>>>> adding new files
   ADD KEY `userid` (`userid`);
 
 --
@@ -389,15 +465,23 @@ ALTER TABLE `vac`
 --
 ALTER TABLE `cust`
 <<<<<<< HEAD
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 =======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 >>>>>>> New files
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `data`
 --
 ALTER TABLE `data`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `data1`
 --
@@ -407,16 +491,25 @@ ALTER TABLE `data1`
 -- AUTO_INCREMENT for table `egg`
 --
 ALTER TABLE `egg`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `feeds`
 --
 ALTER TABLE `feeds`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `feeds`
@@ -428,25 +521,37 @@ ALTER TABLE `feeds`
 --
 ALTER TABLE `items`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `sale`
 --
 ALTER TABLE `sale`
+<<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
+<<<<<<< HEAD
 <<<<<<< HEAD
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 <<<<<<< HEAD
 =======
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 >>>>>>> New files
+=======
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+>>>>>>> adding new files
 --
 -- AUTO_INCREMENT for table `vac`
 --
 ALTER TABLE `vac`
+<<<<<<< HEAD
 <<<<<<< HEAD
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 =======
@@ -454,6 +559,9 @@ ALTER TABLE `vac`
 =======
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 >>>>>>> New files
+=======
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+>>>>>>> adding new files
 --
 -- Constraints for dumped tables
 --
@@ -472,11 +580,14 @@ ALTER TABLE `data`
 
 --
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- Constraints for table `feeds`
 --
 ALTER TABLE `feeds`
   ADD CONSTRAINT `feeds_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`);
 =======
+=======
+>>>>>>> adding new files
 -- Constraints for table `data1`
 --
 ALTER TABLE `data1`
@@ -497,12 +608,16 @@ ALTER TABLE `egg`
 ALTER TABLE `feeds`
   ADD CONSTRAINT `feeds_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `feeds_ibfk_2` FOREIGN KEY (`flocks_id`) REFERENCES `data` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+<<<<<<< HEAD
 >>>>>>> New files
+=======
+>>>>>>> adding new files
 
 --
 -- Constraints for table `items`
 --
 ALTER TABLE `items`
+<<<<<<< HEAD
 <<<<<<< HEAD
   ADD CONSTRAINT `items_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`);
 =======
@@ -510,15 +625,22 @@ ALTER TABLE `items`
   ADD CONSTRAINT `items_ibfk_2` FOREIGN KEY (`flocks_id`) REFERENCES `data` (`id`),
   ADD CONSTRAINT `items_ibfk_3` FOREIGN KEY (`eggs_id`) REFERENCES `egg` (`id`);
 >>>>>>> New files
+=======
+  ADD CONSTRAINT `items_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`);
+>>>>>>> adding new files
 
 --
 -- Constraints for table `sale`
 --
 ALTER TABLE `sale`
   ADD CONSTRAINT `sale_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`),
+<<<<<<< HEAD
   ADD CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`cust_id`) REFERENCES `cust` (`id`),
   ADD CONSTRAINT `sale_ibfk_3` FOREIGN KEY (`eggs_id`) REFERENCES `egg` (`id`),
   ADD CONSTRAINT `sale_ibfk_4` FOREIGN KEY (`flocks_id`) REFERENCES `data` (`id`);
+=======
+  ADD CONSTRAINT `sale_ibfk_2` FOREIGN KEY (`cust_id`) REFERENCES `cust` (`id`);
+>>>>>>> adding new files
 
 --
 -- Constraints for table `vac`
@@ -526,12 +648,15 @@ ALTER TABLE `sale`
 ALTER TABLE `vac`
   ADD CONSTRAINT `vac_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `vac_ibfk_2` FOREIGN KEY (`flocks_id`) REFERENCES `data` (`id`);
+<<<<<<< HEAD
 
 --
 -- Constraints for table `vac`
 --
 ALTER TABLE `vac`
   ADD CONSTRAINT `vac_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `users` (`id`);
+=======
+>>>>>>> adding new files
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

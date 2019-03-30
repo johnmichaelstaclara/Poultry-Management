@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>poonbook</title>
+=======
+	<title>Poultry Management</title>
+>>>>>>> adding new files
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -12,10 +16,14 @@
       <header class="main">
     <div class="row">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h1 class="col-sm-4">&copy;POONBOOK</h1>
 =======
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
 >>>>>>> New files
+=======
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
+>>>>>>> adding new files
    
      <nav class="col-sm-8 text-right"> 	 
          
@@ -29,6 +37,7 @@
 		 <?php endif ?> 
 		 <a href="home.php" class="btn">Home</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		 <a href="add.php" class="btn">Flock Mangement</a>
 		 <a href="add.php" class="btn">Sales</a>
 		<a href="add.php" class="btn">Item</a>
@@ -36,6 +45,8 @@
 		<a href="add.php" class="btn">Customer</a>
 		<a href="add.php" class="btn">Medication</a>
 =======
+=======
+>>>>>>> adding new files
 		<a href="add.php" class="btn">Flock Mangement</a>
 		<a href="sale1.php" class="btn">Sales</a>
 		<a href="item1.php" class="btn">Item</a>
@@ -43,8 +54,13 @@
 		<a href="cust1.php" class="btn">Customer</a>
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
+<<<<<<< HEAD
 		<a href="report.php"class="btn">Reports</a>
 >>>>>>> New files
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+		<a href="report.php"class="btn">Reports</a>
+>>>>>>> adding new files
 		</nav>
 		</div>
 		 </header><br><br>
@@ -87,10 +103,14 @@
 			
 				<thead>
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<center><p><h1 style="color: white;">Contact List</h1></p></center>
 =======
 					<center><p><h1 style="color: white;">Customer List</h1></p></center>
 >>>>>>> New files
+=======
+					<center><p><h1 style="color: white;">Customer List</h1></p></center>
+>>>>>>> adding new files
 					<tr>
 						<th>Last Name</th>
 						<th>First Name</th>
@@ -136,14 +156,20 @@
 </div>
 <br><br>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
 =======
+=======
+>>>>>>> adding new files
  <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
    P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
+<<<<<<< HEAD
 >>>>>>> New files
+=======
+>>>>>>> adding new files
     </footer>
 
 </body>

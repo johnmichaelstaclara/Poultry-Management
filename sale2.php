@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>poonbook</title>
+	<title>Poultry Management</title>
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -58,6 +58,7 @@
         </div> 
       
 
+<<<<<<< HEAD
        <div class="form-group">
 	  <label>Eggs_id</label>
 				<?php
@@ -101,6 +102,9 @@
                           ?>
             </select>
         </div> 
+=======
+      
+>>>>>>> adding new files
  
 	
 	

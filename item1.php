@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>poonbook</title>
+	<title>Poultry Management</title>
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -31,6 +31,10 @@
 		<a href="cust1.php" class="btn">Customer</a>
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
+<<<<<<< HEAD
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+>>>>>>> adding new files
 		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>
@@ -68,6 +72,7 @@
 		//pre_r($result);
 		
 		?>
+		
 		<div class="row justify-content-center">
 		<br><br><br>
 			<table class="table">
@@ -77,11 +82,16 @@
 					<tr>
 						<th>Item_ID</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<th>Description</th>
 =======
 						<th>Flocks_Id</th>
 						<th>Eggs_Id</th>
 >>>>>>> New files
+=======
+						
+						<th>Item Name</th>
+>>>>>>> adding new files
 						<th>Unit</th>
 						<th>Quality</th>
 						<th>Price</th>
@@ -97,11 +107,15 @@
 						<tr>
 							<td><?php echo $row['id']?></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<td><?php echo $row['description']?></td>
 =======
 							<td><?php echo $row['flocks_id']?></td>
 							<td><?php echo $row['eggs_id']?></td>
 >>>>>>> New files
+=======
+							<td><?php echo $row['item_name']?></td>
+>>>>>>> adding new files
 							<td><?php echo $row['unit']?></td>
 							<td><?php echo $row['quality']?></td>
 							<td><?php echo $row['price']?></td>

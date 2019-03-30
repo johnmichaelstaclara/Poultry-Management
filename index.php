@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Register</title>
+	<title>Poultry Management</title>
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -57,14 +57,20 @@
 		<a href="feed1.php" class="btn">Feeds</a>
 		<a href="cust1.php" class="btn">Customer</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<a href="add.php" class="btn">Medication</a>
 =======
+=======
+>>>>>>> adding new files
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 		<a href="egg1.php" class="btn">Eggs</a>
 		<a href="report.php" class="btn">Reports</a>
 
+<<<<<<< HEAD
 >>>>>>> New files
+=======
+>>>>>>> adding new files
         </div>
 
        
