@@ -4,10 +4,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>poonbook</title>
 =======
 	<title>Poultry Management</title>
 >>>>>>> adding new files
+=======
+	<title>Poultry Management</title>
+>>>>>>> update file
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -17,6 +21,7 @@
     <div class="row">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h1 class="col-sm-4">&copy;POONBOOK</h1>
 =======
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
@@ -24,6 +29,9 @@
 =======
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
 >>>>>>> adding new files
+=======
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
+>>>>>>> update file
    
      <nav class="col-sm-8 text-right"> 	 
          
@@ -38,6 +46,7 @@
 		 <a href="home.php" class="btn">Home</a>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		 <a href="add.php" class="btn">Flock Mangement</a>
 		 <a href="add.php" class="btn">Sales</a>
 		<a href="add.php" class="btn">Item</a>
@@ -47,6 +56,8 @@
 =======
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
 		<a href="add.php" class="btn">Flock Mangement</a>
 		<a href="sale1.php" class="btn">Sales</a>
 		<a href="item1.php" class="btn">Item</a>
@@ -55,12 +66,17 @@
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<a href="report.php"class="btn">Reports</a>
 >>>>>>> New files
 =======
 		<a href="egg1.php"class="btn">Eggs</a>
 		<a href="report.php"class="btn">Reports</a>
 >>>>>>> adding new files
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+		<a href="report.php"class="btn">Reports</a>
+>>>>>>> update file
 		</nav>
 		</div>
 		 </header><br><br>
@@ -104,6 +120,7 @@
 				<thead>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<center><p><h1 style="color: white;">Contact List</h1></p></center>
 =======
 					<center><p><h1 style="color: white;">Customer List</h1></p></center>
@@ -111,6 +128,9 @@
 =======
 					<center><p><h1 style="color: white;">Customer List</h1></p></center>
 >>>>>>> adding new files
+=======
+					<center><p><h1 style="color: white;">Customer List</h1></p></center>
+>>>>>>> update file
 					<tr>
 						<th>Last Name</th>
 						<th>First Name</th>
@@ -157,19 +177,25 @@
 <br><br>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
 =======
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
  <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
    P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> New files
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
     </footer>
 
 </body>

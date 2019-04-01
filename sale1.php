@@ -31,12 +31,18 @@
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<a href="report.php"class="btn">Reports</a>
 =======
 		<a href="egg1.php"class="btn">Eggs</a>
 		<a href="report.php"class="btn">Reports</a>
 	
 >>>>>>> adding new files
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+		<a href="report.php"class="btn">Reports</a>
+	
+>>>>>>> update file
 		</nav>
 		</div>
 		 </header><br><br>
@@ -90,6 +96,7 @@
 						<th>Flocks_ID</th>
 						
 						
+						
 						<th colspan="2">Action</th>
 					</tr>
 				</thead>
@@ -102,12 +109,16 @@
 							<td><?php echo $row['date']?></td>
 							<td><?php echo $row['cust_id']?></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<td><?php echo $row['eggs_id']?></td>
 							<td><?php echo $row['flocks_id']?></td>
 							
 =======
 														
 >>>>>>> adding new files
+=======
+														
+>>>>>>> update file
 							<td>
 								<a href="sale2.php?edit=<?php echo $row['id'];?>"
 									class="btn">Edit</a>

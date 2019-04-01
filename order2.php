@@ -5,10 +5,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>poonbook</title>
 =======
 	<title>Poultry Management</title>
 >>>>>>> adding new files
+=======
+	<title>Poultry Management</title>
+>>>>>>> update file
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -37,6 +41,7 @@
 	<div class="row justify-content-center">
 	<form action="process6.php" method="POST">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
+<<<<<<< HEAD
 	<p>Please pill up properly</p>
 	
 	 <label>Customer</label>
@@ -47,26 +52,38 @@
 
 				?>
 				<select name="sales_id" class="form-control">
-                      <?php
-                          
-						  
-                          $resultCheck = mysqli_num_rows($records);
+=======
+	<table class="table">
+	<p>Please pill up properly</p>
+			  
+	<?php
+		$mysqli = new mysqli('localhost','root','','registration') or die(mysqli_error($mysqli));
+		$username= $_SESSION["username"];
+		$result=$mysqli->query("select id from users where username='$username'") or die($mysqli->error);
+		if(@count($result)==1)
+		{
+			$row=$result->fetch_array();
+			$userid=$row['id'];
 
-                            while ($row = mysqli_fetch_array($result)) {
-                      ?>
-                           <option value="<?php echo $row['id'];?>"><?php echo $row['id'];?></option>   
-                           <?php   
-                          }
-                          ?>
-            </select>
-			<br>
-			<label>Items</label>
+		}
+		$result = $mysqli->query("SELECT * FROM items where userid='$userid'") or die($mysqli->error);
+		//pre_r($result);
+		
+		?>
+		
+		<div class="row justify-content-center">
+		<br><br><br>
+			<table class="table">
+			
+				 <div class="form-group">
+	            <label>Item Name</label>
 				<?php
 						$sql = "SELECT * FROM `items`";
 						$result = mysqli_query($mysqli, $sql);
 
 				?>
-				<select name="item_id" class="form-control">
+				<select name="item_name" class="form-control">
+>>>>>>> update file
                       <?php
                           
 						  
@@ -74,11 +91,50 @@
 
                             while ($row = mysqli_fetch_array($result)) {
                       ?>
+<<<<<<< HEAD
                            <option value="<?php echo $row['id'];?>"><?php echo $row['id'];?></option>   
+=======
+                           <option value="<?php echo $row['id'];?>"><?php echo $row['item_name'];?></option>   
+>>>>>>> update file
                            <?php   
                           }
                           ?>
             </select>
+<<<<<<< HEAD
+			<br>
+			<label>Items</label>
+=======
+        </div> 
+        <div class="form-group">
+	            <label>Unit</label>
+>>>>>>> update file
+				<?php
+						$sql = "SELECT * FROM `items`";
+						$result = mysqli_query($mysqli, $sql);
+
+				?>
+<<<<<<< HEAD
+				<select name="item_id" class="form-control">
+=======
+				<select name="unit" class="form-control">
+>>>>>>> update file
+                      <?php
+                          
+						  
+                          $resultCheck = mysqli_num_rows($records);
+
+                            while ($row = mysqli_fetch_array($result)) {
+                      ?>
+<<<<<<< HEAD
+                           <option value="<?php echo $row['id'];?>"><?php echo $row['id'];?></option>   
+=======
+                           <option value="<?php echo $row['id'];?>"><?php echo $row['unit'];?></option>   
+>>>>>>> update file
+                           <?php   
+                          }
+                          ?>
+            </select>
+<<<<<<< HEAD
 			<br>
 			  
 			  <div class="form-group">
@@ -89,6 +145,32 @@
 			 
 			  
 			  
+=======
+        </div> 
+        <div class="form-group">
+	            <label>Unit</label>
+				<?php
+						$sql = "SELECT * FROM `items`";
+						$result = mysqli_query($mysqli, $sql);
+
+				?>
+				<select name="unit" class="form-control">
+                      <?php
+                          
+						  
+                          $resultCheck = mysqli_num_rows($records);
+
+                            while ($row = mysqli_fetch_array($result)) {
+                      ?>
+                           <option value="<?php echo $row['id'];?>"><?php echo $row['price'];?></option>   
+                           <?php   
+                          }
+                          ?>
+            </select>
+        </div> 
+			</table>
+
+>>>>>>> update file
 			  
 			<br>
 	
@@ -96,8 +178,12 @@
 		<?php 
 			if($update==true):
 		?>
+<<<<<<< HEAD
 		<button type="submit" class="btn" name="update">Update</button>
 		<a href="order1.php"class="btn">back</a>
+=======
+
+>>>>>>> update file
 		<?php else: ?>
 			<button type="submit" class="btn" name="save">save</button>
 			<a href="order1.php"class="btn">back</a>
@@ -105,6 +191,15 @@
 		</div>
 	</form>
 	</div>
+<<<<<<< HEAD
+=======
+</div>
+</table>
+</form>
+</div>
+
+
+>>>>>>> update file
 
 <br>
  <footer class="main">

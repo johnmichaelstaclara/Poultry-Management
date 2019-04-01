@@ -5,10 +5,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>poonbook</title>
 =======
 	<title>Poultry Management</title>
 >>>>>>> adding new files
+=======
+	<title>Poultry Management</title>
+>>>>>>> update file
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -18,6 +22,7 @@
     <div class="row">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <h1 class="col-sm-4">&copy;POONBOOK</h1>
 =======
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
@@ -25,6 +30,9 @@
 =======
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
 >>>>>>> adding new files
+=======
+    <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
+>>>>>>> update file
      <nav class="col-sm-8 text-right"> 	 
          
 	     <?php if (isset($_SESSION['success'])): ?>
@@ -48,6 +56,7 @@
 	<p>Please pill up properly</p>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<div class="form-group">
 			<label>Types of Vacination</label>
 			<input type="text" name="types_vac" class="form-control" value="<?php echo $types_vac;?>"placeholder="Enter the types of Vacination" required>
@@ -59,6 +68,8 @@
 =======
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
 	 <label>Breed</label>
 				<?php
 						$sql = "SELECT * FROM `data`";
@@ -101,9 +112,12 @@
 		</div>
 		
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> New files
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
 		<div class="form-group">
 			<label>Amount</label>
 			<input type="text" name="amount" class="form-control" value="<?php echo $amount;?>"placeholder="Enter the amount" required>
@@ -127,19 +141,25 @@
 <br>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
 =======
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
  <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
    P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> New files
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
     </footer>
 
 </body>

@@ -1,4 +1,4 @@
-<?php include('process2.php');?>
+<?php include('process1.php');?>
 
 <!DOCTYPE html>
 <html>
@@ -12,8 +12,7 @@
       <header class="main">
     <div class="row">
     <h1 class="col-sm-4">&copy;POULTRY MANAGEMENT</h1>
-   
-     <nav class="col-sm-8 text-right"> 	 
+        <nav class="col-sm-8 text-right"> 	 
          
 	     <?php if (isset($_SESSION['success'])): ?>
 		      
@@ -23,7 +22,7 @@
 		     <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
 		      <p><a href="index.php?logout='1'" style="color:white;">Logout</a></p>
 		 <?php endif ?> 
-		<a href="home.php" class="btn">Home</a>
+		 <a href="home.php" class="btn">Home</a>
 		<a href="add.php" class="btn">Flock Mangement</a>
 		<a href="sale1.php" class="btn">Sales</a>
 		<a href="item1.php" class="btn">Item</a>
@@ -31,15 +30,9 @@
 		<a href="cust1.php" class="btn">Customer</a>
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 		<a href="egg1.php"class="btn">Eggs</a>
->>>>>>> adding new files
-=======
-		<a href="egg1.php"class="btn">Eggs</a>
->>>>>>> update file
 		<a href="report.php"class="btn">Reports</a>
+	
 		</nav>
 		</div>
 		 </header><br><br>
@@ -47,7 +40,7 @@
 
 <div id="main">
 			
-	<?php require_once 'process2.php';?>
+	<?php require_once 'process1.php';?>
 	
 	<?php
 	
@@ -72,41 +65,25 @@
 			$userid=$row['id'];
 
 		}
-		$result = $mysqli->query("SELECT * FROM items where userid='$userid'") or die($mysqli->error);
+		$result = $mysqli->query("SELECT * FROM sale where userid='$userid'") or die($mysqli->error);
 		//pre_r($result);
 		
 		?>
+		
+		
 		
 		<div class="row justify-content-center">
 		<br><br><br>
 			<table class="table">
 			
 				<thead>
-					<center><p><h1 style="color: white;">Item List</h1></p></center>
+					<center><p><h1 style="color: white;">Sales List</h1></p></center>
 					<tr>
-						<th>Item_ID</th>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						<th>Description</th>
-=======
-						<th>Flocks_Id</th>
-						<th>Eggs_Id</th>
->>>>>>> New files
-=======
+						<th>Sales_ID</th>
+						<th>Timestamp</th>
+						<th>Cust_ID</th>
 						
-						<th>Item Name</th>
->>>>>>> adding new files
-=======
-						
-						<th>Item Name</th>
->>>>>>> update file
-						<th>Unit</th>
-						<th>Quality</th>
-						<th>Price</th>
-						
-						
-						<th colspan="2">Action</th>
+					
 					</tr>
 				</thead>
 				
@@ -115,49 +92,15 @@
 					
 						<tr>
 							<td><?php echo $row['id']?></td>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-							<td><?php echo $row['description']?></td>
-=======
-							<td><?php echo $row['flocks_id']?></td>
-							<td><?php echo $row['eggs_id']?></td>
->>>>>>> New files
-=======
-							<td><?php echo $row['item_name']?></td>
->>>>>>> adding new files
-=======
-							<td><?php echo $row['item_name']?></td>
->>>>>>> update file
-							<td><?php echo $row['unit']?></td>
-							<td><?php echo $row['quality']?></td>
-							<td><?php echo $row['price']?></td>
-							
-							
-							<td>
-								<a href="item2.php?edit=<?php echo $row['id'];?>"
-									class="btn">Edit</a>
-								<a href="process2.php?delete=<?php echo $row['id'];?>"
-									class="btn btn-danger">Delete</a>
-									
-							</td>
+							<td><?php echo $row['date']?></td>
+							<td><?php echo $row['cust_id']?></td>
+														
+						
 						</tr>
 						<?php endwhile;?>
 			</table>
 		</div>
-		<?php
-		function pre_r($array){
-			echo'<pre>';
-			print_r($array);
-			echo'</pre>';
-		}
-	
-	?>
-
-	<a href="item2.php"class="btn">Add Contact</a>
-	<a href="index.php"class="btn">Back</a>
-	
-</div>
+		
 </div>
 <br><br>
  <footer class="main">
@@ -165,6 +108,7 @@
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>
    P-6 Mobod Oroquieta City, Misamis Occidental 7207</p>
     </footer>
+
 
 </body>
 </html> 

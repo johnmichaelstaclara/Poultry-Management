@@ -4,10 +4,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>poonbook</title>
 =======
 	<title>Poultry Management</title>
 >>>>>>> adding new files
+=======
+	<title>Poultry Management</title>
+>>>>>>> update file
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -36,9 +40,13 @@
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<a href="egg1.php"class="btn">Eggs</a>
 >>>>>>> adding new files
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+>>>>>>> update file
 		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>
@@ -82,12 +90,22 @@
 				<thead>
 					<center><p><h1 style="color: white;">Order List</h1></p></center>
 					<tr>
+<<<<<<< HEAD
 					    <th>Order No.</th>
 						<th>Timestamp</th>
 						<th>Sales_Id</th>
 						<th>Item_ID</th>
 						<th>Price</th>
 						<th colspan="2">Action</th>
+=======
+					    <th>Order_ID</th>
+						<th>Item Name</th>
+						<th>Unit</th>
+						<th>Quality</th>
+						<th>Price</th>
+						
+						
+>>>>>>> update file
 					</tr>
 				</thead>
 				
@@ -96,11 +114,18 @@
 					
 						<tr>
 							<td><?php echo $row['id']?></td>
+<<<<<<< HEAD
 							<td><?php echo $row['date']?></td>
 							<td><?php echo $row['sales_id']?></td>
 							<td><?php echo $row['item_id']?></td>
 							<td><?php echo $row['price']?></td>
 							
+=======
+							<td><?php echo $row['item_name']?></td>
+							<td><?php echo $row['unit']?></td>
+							<td><?php echo $row['quality']?></td>
+							<td><?php echo $row['price']?></td>
+>>>>>>> update file
 							<td>
 								<a href="order2.php?edit=<?php echo $row['id'];?>"
 									class="btn">Edit</a>

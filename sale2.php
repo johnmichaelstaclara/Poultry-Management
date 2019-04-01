@@ -59,6 +59,7 @@
       
 
 <<<<<<< HEAD
+<<<<<<< HEAD
        <div class="form-group">
 	  <label>Eggs_id</label>
 				<?php
@@ -105,6 +106,9 @@
 =======
       
 >>>>>>> adding new files
+=======
+      
+>>>>>>> update file
  
 	
 	

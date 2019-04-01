@@ -4,10 +4,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>poonbook</title>
 =======
 	<title>Poultry Management</title>
 >>>>>>> adding new files
+=======
+	<title>Poultry Management</title>
+>>>>>>> update file
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -73,14 +77,20 @@
 		
 		?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> update file
 		<?php
 		
 		$result = $mysqli->query("SELECT * FROM data,egg where data.id=egg.flocks_id") or die($mysqli->error);
 		//pre_r($result);
 		
 		?>
+<<<<<<< HEAD
 >>>>>>> adding new files
+=======
+>>>>>>> update file
 		<div class="row justify-content-center">
 		<br><br><br>
 			<table class="table">
@@ -90,10 +100,14 @@
 					<tr>
 						<th>Egg Id</th>
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<th>Flocks Id</th>
 =======
 						<th>Breed</th>
 >>>>>>> adding new files
+=======
+						<th>Breed</th>
+>>>>>>> update file
 						<th>Timestamp</th>
 						<th>Small Eggs</th>
 						<th>Medium Eggs</th>
@@ -111,10 +125,14 @@
 						<tr>
 							<td><?php echo $row['id']?></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<td><?php echo $row['flocks_id']?></td>
 =======
 							<td><?php echo $row['breed']?></td>
 >>>>>>> adding new files
+=======
+							<td><?php echo $row['breed']?></td>
+>>>>>>> update file
 							<td><?php echo $row['date']?></td>
 							<td><?php echo $row['small_egg']?></td>
 							<td><?php echo $row['medium_egg']?></td>

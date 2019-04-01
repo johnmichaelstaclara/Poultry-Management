@@ -58,19 +58,25 @@
 		<a href="cust1.php" class="btn">Customer</a>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<a href="add.php" class="btn">Medication</a>
 =======
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 		<a href="egg1.php" class="btn">Eggs</a>
 		<a href="report.php" class="btn">Reports</a>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> New files
 =======
 >>>>>>> adding new files
+=======
+>>>>>>> update file
         </div>
 
        

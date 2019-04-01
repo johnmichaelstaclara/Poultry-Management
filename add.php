@@ -32,9 +32,13 @@
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<a href="egg1.php"class="btn">Eggs</a>
 >>>>>>> adding new files
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+>>>>>>> update file
 		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>

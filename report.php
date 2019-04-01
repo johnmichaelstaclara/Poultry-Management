@@ -4,10 +4,14 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<title>poonbook</title>
 =======
 	<title>Poultry Management</title>
 >>>>>>> adding new files
+=======
+	<title>Poultry Management</title>
+>>>>>>> update file
 	<link rel="stylesheet" type="text/css"	href="style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
@@ -36,13 +40,18 @@
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		<a href="egg1.php"class="btn">Eggs</a>
 >>>>>>> adding new files
+=======
+		<a href="egg1.php"class="btn">Eggs</a>
+>>>>>>> update file
 		<a href="index.php"class="btn">Back</a>
 		</nav>
 		</div>
 		 </header><br><br>
+<<<<<<< HEAD
 		 
 
 <div id="main">
@@ -629,6 +638,75 @@
 	</div>
 	<br><br>
 >>>>>>> adding new files
+=======
+		               
+
+
+		                <section class="main">
+       <div class="row">
+       	<div class="col-sm-4">
+
+	  <form>
+        
+       
+		<h3>Welcome to <br>your poultry management</h3>
+
+             <nav class="col-sm-8 text-left"> 	 
+         
+	     <?php if (isset($_SESSION['success'])): ?>
+		      
+		 <?php endif ?>
+		 
+		 <?php if(isset($_SESSION["username"])): ?>
+		     <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+		      <p><a href="index.php?logout='1'" style="color:white;">Logout</a></p>
+		 <?php endif ?> 
+		</nav>
+
+        <div class="btn-group-vertical">
+		<a href="home.php" class="btn">Home</a>
+		<a href="flockreport.php" class="btn">Flock Reports</a>
+		<a href="salereport.php" class="btn">Sales Reports</a>
+		<a href="itemreport.php" class="btn">Item Reports</a>
+		<a href="feedreport.php" class="btn">Feeds Reports</a>
+		<a href="custreport.php" class="btn">Customer Reports</a>
+		<a href="medreport.php" class="btn">Medication Reports</a>
+		<a href="orderreport.php" class="btn">Order Reports</a>
+		<a href="eggreport.php" class="btn">Eggs Reports</a>
+	
+
+        </div>
+
+       
+
+
+
+    </form>
+</div>
+
+
+    <form>
+
+		<p>
+		
+           <h1>POULTRY MANAGEMENT</h1>
+
+      Poultry management usually refers to the husbandry practices or production techniques that help to maximize the efficiency of production. Sound management practices are very essential to optimize production. Scientific poultry management aims at maximizing returns with minimum investment.<br><br>
+
+           <h1>Brooder Management</h1>
+      Brooder house: Brooder house should be draft-free, rain-proof and protected against predators. Brooding pens should have windows with wire mesh for adequate ventilation. Too dusty environment irritates the respiratory tract of the chicks. Besides dust is one of the vehicles of transmission of diseases. Too much moisture causes ammonia fumes which irritate the respiratory tract and eyes. Good ventilation provides a comfortable environment without draft.<br><br><br>
+		<a class="nav-link fa fa-google" href="http://agritech.tnau.ac.in/animal_husbandry/ani_chik_poultry%20mgt.html" style="color: white; "> Google</a>
+		</p>
+
+
+</div>
+</section>
+
+
+
+
+	<br><br>
+>>>>>>> update file
  <footer class="main">
    <p class="col-sm-4">&copy; 2018 JohnMichael L. Sta.Clara</p>
    <p class="tile-copyright">University of Science and Technology of Southern Philippines<br>

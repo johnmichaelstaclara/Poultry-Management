@@ -18,8 +18,11 @@ $flocks_id="";
 
 
 
+
+
 if(isset($_POST['save'])){
 	$cust_id = $_POST['cust_id'];
+<<<<<<< HEAD
 <<<<<<< HEAD
 	$eggs_id = $_POST['eggs_id'];
 	$flocks_id = $_POST['flocks_id'];
@@ -27,6 +30,10 @@ if(isset($_POST['save'])){
 	
 	
 >>>>>>> adding new files
+=======
+	
+	
+>>>>>>> update file
 	$username= $_SESSION["username"];
 	$result=$mysqli->query("select id from users where username='$username'") or die($mysqli->error);
 	if(@count($result)==1)
@@ -37,10 +44,14 @@ if(isset($_POST['save'])){
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$mysqli->query("INSERT INTO sale (userid,cust_id,eggs_id,flocks_id) VALUES ('$userid','$cust_id','$eggs_id','$flocks_id')") or
 =======
 	$mysqli->query("INSERT INTO sale (userid,cust_id) VALUES ('$userid','$cust_id')") or
 >>>>>>> adding new files
+=======
+	$mysqli->query("INSERT INTO sale (userid,cust_id) VALUES ('$userid','$cust_id')") or
+>>>>>>> update file
 			die($mysqli->error);
 	$_SESSION['message'] = "Record has been saved!";
 	$_SESSION['msg_type'] = "success";
@@ -71,6 +82,8 @@ if(isset($_GET['edit'])){
 		
 	
 		
+	
+		
 		
 		
 	}
@@ -84,13 +97,19 @@ if(isset($_POST['update'])){
 	
 
 	
+
 	
 	
+	
+<<<<<<< HEAD
 <<<<<<< HEAD
 	$mysqli->query("UPDATE sale SET cust_id='$cust_id',eggs_id='$eggs_id',flocks_id='$flocks_id' WHERE id=$id") or die($mysqli->error);
 =======
 	$mysqli->query("UPDATE sale SET cust_id='$cust_id' WHERE id=$id") or die($mysqli->error);
 >>>>>>> adding new files
+=======
+	$mysqli->query("UPDATE sale SET cust_id='$cust_id' WHERE id=$id") or die($mysqli->error);
+>>>>>>> update file
 	$_SESSION['message'] = "Record has been updated!";
 	$_SESSION['msg_type'] = "warning";
 	

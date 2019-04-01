@@ -35,6 +35,7 @@
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
 	<p>Please pill up properly</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 <label>Breed</label>
 				<?php
 						$sql = "SELECT * FROM `data`";
@@ -75,11 +76,16 @@
                           ?>
             </select>
 =======
+=======
+>>>>>>> update file
 	 <div class="form-group">
 			<label>Item Name</label>
 			<input type="text" name="item_name" class="form-control" value="<?php echo $item_name;?>"placeholder="Enter the item" required>
 		</div>
+<<<<<<< HEAD
 >>>>>>> adding new files
+=======
+>>>>>>> update file
 		
 		
 		<div class="form-group">

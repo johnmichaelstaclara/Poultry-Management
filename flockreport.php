@@ -1,4 +1,4 @@
-<?php include('process2.php');?>
+<?php include('process.php');?>
 
 <!DOCTYPE html>
 <html>
@@ -31,14 +31,7 @@
 		<a href="cust1.php" class="btn">Customer</a>
 		<a href="med1.php" class="btn">Medication</a>
 		<a href="order1.php" class="btn">Order</a>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 		<a href="egg1.php"class="btn">Eggs</a>
->>>>>>> adding new files
-=======
-		<a href="egg1.php"class="btn">Eggs</a>
->>>>>>> update file
 		<a href="report.php"class="btn">Reports</a>
 		</nav>
 		</div>
@@ -47,7 +40,7 @@
 
 <div id="main">
 			
-	<?php require_once 'process2.php';?>
+	<?php require_once 'process.php';?>
 	
 	<?php
 	
@@ -72,40 +65,21 @@
 			$userid=$row['id'];
 
 		}
-		$result = $mysqli->query("SELECT * FROM items where userid='$userid'") or die($mysqli->error);
+		$result = $mysqli->query("SELECT * FROM data where userid='$userid'") or die($mysqli->error);
 		//pre_r($result);
 		
 		?>
-		
 		<div class="row justify-content-center">
 		<br><br><br>
 			<table class="table">
 			
 				<thead>
-					<center><p><h1 style="color: white;">Item List</h1></p></center>
+					<center><p><h1 style="color: white;">Flocks Management List</h1></p></center>
 					<tr>
-						<th>Item_ID</th>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-						<th>Description</th>
-=======
-						<th>Flocks_Id</th>
-						<th>Eggs_Id</th>
->>>>>>> New files
-=======
-						
-						<th>Item Name</th>
->>>>>>> adding new files
-=======
-						
-						<th>Item Name</th>
->>>>>>> update file
-						<th>Unit</th>
-						<th>Quality</th>
-						<th>Price</th>
-						
-						
+						<th>Flocks_ID</th>
+						<th>Breed</th>
+						<th>Rooster</th>
+						<th>Hen</th>
 						<th colspan="2">Action</th>
 					</tr>
 				</thead>
@@ -115,49 +89,15 @@
 					
 						<tr>
 							<td><?php echo $row['id']?></td>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-							<td><?php echo $row['description']?></td>
-=======
-							<td><?php echo $row['flocks_id']?></td>
-							<td><?php echo $row['eggs_id']?></td>
->>>>>>> New files
-=======
-							<td><?php echo $row['item_name']?></td>
->>>>>>> adding new files
-=======
-							<td><?php echo $row['item_name']?></td>
->>>>>>> update file
-							<td><?php echo $row['unit']?></td>
-							<td><?php echo $row['quality']?></td>
-							<td><?php echo $row['price']?></td>
+							<td><?php echo $row['breed']?></td>
+							<td><?php echo $row['rooster']?></td>
+							<td><?php echo $row['hen']?></td>
 							
-							
-							<td>
-								<a href="item2.php?edit=<?php echo $row['id'];?>"
-									class="btn">Edit</a>
-								<a href="process2.php?delete=<?php echo $row['id'];?>"
-									class="btn btn-danger">Delete</a>
-									
-							</td>
 						</tr>
 						<?php endwhile;?>
 			</table>
 		</div>
-		<?php
-		function pre_r($array){
-			echo'<pre>';
-			print_r($array);
-			echo'</pre>';
-		}
-	
-	?>
-
-	<a href="item2.php"class="btn">Add Contact</a>
-	<a href="index.php"class="btn">Back</a>
-	
-</div>
+		
 </div>
 <br><br>
  <footer class="main">
@@ -167,4 +107,4 @@
     </footer>
 
 </body>
-</html> 
+</html>
